@@ -4,11 +4,13 @@ A simple command-line tool to manage and collect custom scripts (by symlink).
 
 Requirements
 ------------
-You must create the directory `/usr/local/bin/registered`.
+- Requires the directory `/usr/local/bin/registered`
+- Python 3+
+- Bash
 
 How to Use
 ----------
-Scripts are found in the `./scripts` directory.
+Scripts are found in the `scripts` directory.
 
 Run `register` to see a list of registered scripts (starts as empty).
 
@@ -18,4 +20,4 @@ Run `unregister <command name>` to unregister a script.  You must pass a name th
 
 Pro Tips
 --------
-Run `register scripts/register` and `register scripts/unregister`!  ;)
+Run `register scripts/register` and `register scripts/unregister`!  That's sort of the point, after all.  ;)
