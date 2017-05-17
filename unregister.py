@@ -4,7 +4,6 @@ Unregister the given script in /usr/local/bin/registered
 
 import argparse
 import os
-import pathlib
 import subprocess
 
 from register import settings
