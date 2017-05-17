@@ -16,8 +16,8 @@ def unregister(name):
         print("[-] Script does not exist, or is not registered in {}: {}".format(settings.TARGET, name))
         return
 
+    # don't check that path exists -- it might be a broken link
     path = settings.TARGET / name
-    assert path.exists()
 
     os.remove(path)
     print("[+] Removed script: {}".format(path))
