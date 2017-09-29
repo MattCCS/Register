@@ -9,7 +9,6 @@ done
 DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
 # move to project directory
-cd $DIR/../..
-
+cd $DIR/..
 
 python3 -m register.unregister $@
