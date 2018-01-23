@@ -46,7 +46,7 @@ def add(pwd, script):
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Registers the given commands, or lists registered commands")
-    parser.add_argument("pwd", help="The present working directory (auto)")
+    parser.add_argument("pwd", help=argparse.SUPPRESS)
     parser.add_argument("scripts", help="The scripts to register", nargs="*")
     args = parser.parse_args()
     return args
